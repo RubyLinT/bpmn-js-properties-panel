@@ -1,0 +1,94 @@
+{
+  "_from": "git+https://github.com/shidalin/bpmn-js-properties-panel.git",
+  "_id": "shid021-bjpp@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/bpmn-js-properties-panel",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "bpmn-js-properties-panel@git+https://github.com/shidalin/bpmn-js-properties-panel.git",
+    "name": "bpmn-js-properties-panel",
+    "escapedName": "bpmn-js-properties-panel",
+    "rawSpec": "git+https://github.com/shidalin/bpmn-js-properties-panel.git",
+    "saveSpec": "git+https://github.com/shidalin/bpmn-js-properties-panel.git",
+    "fetchSpec": "https://github.com/shidalin/bpmn-js-properties-panel.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/shidalin/bpmn-js-properties-panel.git#a0f57432853682464ea376da3b5fb33b1f511903",
+  "_spec": "bpmn-js-properties-panel@git+https://github.com/shidalin/bpmn-js-properties-panel.git",
+  "_where": "D:\\ltt\\demo\\bpmn-js-properties-panel",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/nikku"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/bpmn-js-properties-panel/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ids": "^1.0.0",
+    "inherits": "^2.0.1",
+    "lodash": "^4.17.15",
+    "min-dom": "^3.1.1",
+    "scroll-tabs": "^1.0.1",
+    "selection-update": "^0.1.2"
+  },
+  "deprecated": false,
+  "description": "shid021-bjpp",
+  "devDependencies": {
+    "activiti-bpmn-moddle": "https://github.com/igdianov/activiti-bpmn-moddle/archive/v1.0.5.tar.gz",
+    "bpmn-js": "^3.1.0",
+    "bpmn-moddle": "^5.1.6",
+    "chai": "^4.1.2",
+    "diagram-js": "^3.3.1",
+    "eslint": "^5.2.0",
+    "eslint-plugin-bpmn-io": "^0.6.0",
+    "karma": "^2.0.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-mocha": "~1.2.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-spec-reporter": "0.0.31",
+    "karma-webpack": "^3.0.0",
+    "less": "^3.8.0",
+    "mocha": "^5.2.0",
+    "mocha-test-container-support": "0.2.0",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^1.20.0",
+    "raw-loader": "^0.5.1",
+    "sinon": "^4.5.0",
+    "sinon-chai": "^3.2.0",
+    "webpack": "^4.16.2"
+  },
+  "homepage": "https://github.com/bpmn-io/bpmn-js-properties-panel#readme",
+  "keywords": [
+    "bpmn-js",
+    "properties",
+    "properties-panel"
+  ],
+  "license": "MIT",
+  "name": "shid021-bjpp",
+  "peerDependencies": {
+    "bpmn-js": "^1.x || ^2.x || ^3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/bpmn-js-properties-panel.git"
+  },
+  "scripts": {
+    "all": "run-s lint test build",
+    "build": "run-s build:*",
+    "build:less": "lessc --include-path=node_modules styles/properties.less dist/assets/bpmn-js-properties-panel.css",
+    "dev": "npm test -- --no-single-run --auto-watch",
+    "lint": "eslint .",
+    "prepublishOnly": "run-s build",
+    "test": "karma start"
+  },
+  "version": "1.0.0"
+}
